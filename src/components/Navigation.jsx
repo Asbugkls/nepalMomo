@@ -19,6 +19,7 @@ function Navigation() {
           <NavLink to='/menu' className='hover:text-orange-500 text-gray-500' >Menu</NavLink>
           <NavLink to='/services' className='hover:text-orange-500 text-gray-500'>Services</NavLink>
           <NavLink to='/allergyadvice' className='hover:text-orange-500 text-gray-500'>AllergyAdvice</NavLink>
+          
         </div>
         <div className='flex  ml-[180px] space-x-[20px]'>
           <div className='flex space-x-[20px] mt-[8px]'>

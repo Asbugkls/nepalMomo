@@ -2,7 +2,7 @@ import React from 'react'
 import { Routes, Route } from "react-router-dom"
 import Home from './Pages/Home'
 import About from './Pages/About'
-import Contact from './Pages/Contact'
+import ContactUs from './Pages/ContactUs'
 import Menu from './Pages/Menu'
 import Services from './Pages/Services'
 import AllergyAdvice from './Pages/AllergyAdvice'
@@ -17,7 +17,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/allergyadvice' element={<AllergyAdvice />} />
-        <Route path='/contact' element={<Contact />} />
+        <Route path='/contactus' element={<ContactUs />} />
         <Route path='/menu' element={<Menu />} />
         <Route path='/services' element={<Services />} />
         <Route path='/login' element={<Login />} />
