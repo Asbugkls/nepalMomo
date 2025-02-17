@@ -7,7 +7,9 @@ import Menu from './Pages/Menu'
 import Services from './Pages/Services'
 import AllergyAdvice from './Pages/AllergyAdvice'
 import Login from "./Pages/Login"
-import Navigation from './components/Navigation'
+import ProductDescription from './Pages/ProductDescription'
+import Navigation from './assets/components/Navigation'
+import CartPage from './Pages/CartPage'
 
 function App() {
   return (
@@ -21,7 +23,9 @@ function App() {
         <Route path='/menu' element={<Menu />} />
         <Route path='/services' element={<Services />} />
         <Route path='/login' element={<Login />} />
-      </Routes>
+        <Route path='/cartpage' element={<CartPage />} />
+        <Route path='/productDescription/:id' element={<ProductDescription />} />
+        </Routes>
 
     </div>
   )
