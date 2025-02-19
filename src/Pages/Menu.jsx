@@ -64,7 +64,7 @@ function Menu() {
                 </div>
               )
             })}
-          </div>) : (<div>Loading...</div>)}
+          </div>) : (<div>Wait For Loading...</div>)}
       </div>
 
 

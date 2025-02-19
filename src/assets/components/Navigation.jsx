@@ -1,44 +1,59 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { NavLink } from 'react-router-dom'
 import momologo from '../About/momologo.png'
 import { FaFacebook } from 'react-icons/fa'
 import { FaInstagram } from 'react-icons/fa'
 import { AiFillTikTok } from 'react-icons/ai'
 import CartPage from '../../Pages/CartPage'
+import { BsCart4 } from 'react-icons/bs'
+import { CartContext } from '../../Context/CartProvider'
+import { FaShoppingCart } from "react-icons/fa";
+
 
 function Navigation () {
+  const {state}=useContext(CartContext)
+  console.log(state.cartItem)
+ const totalCartItem=state.cartItem.reduce((acc,item)=>{
+    return acc+item.qty; 
+  },0)
+  console.log(totalCartItem)
   return (
-    <div className='p-0.5'>
-      <div className='h-[70px] shadow-2xs shadow-gray-300  pl-[110px] flex items-center bg-white'>
-        <NavLink to='/'>
-          <div>
-            <img src={momologo} alt='' className='h-[45px]' />
-          </div>
-        </NavLink>
-        <div className='pl-[50px] space-x-[30px]'>
-          <NavLink to='/about' className='hover:text-orange-500 text-gray-500'>
+    <div>
+      <div className='h-[90px] shadow-2xs shadow-gray-300  pl-[110px] flex items-center bg-white'>
+        <div>
+          <img src={momologo} alt='' className='h-[45px]' />
+        </div>
+
+        <div className='pl-[20px] space-x-[25px] flex'>
+          <NavLink to='/' className='hover:text-orange-500 text-black border-b-2 border-amber-500'>
+            Home
+          </NavLink>
+
+          <NavLink to='/about' className='hover:text-orange-500 text-black'>
             About
           </NavLink>
-          <NavLink to='/menu' className='hover:text-orange-500 text-gray-500'>
+          <NavLink to='/menu' className='hover:text-orange-500 text-black'>
             Menu
           </NavLink>
           <NavLink
             to='/services'
-            className='hover:text-orange-500 text-gray-500'
+            className='hover:text-orange-500  text-black'
           >
             Services
           </NavLink>
           <NavLink
             to='/allergyadvice'
-            className='hover:text-orange-500 text-gray-500'
+            className='hover:text-orange-500 text-black'
           >
             AllergyAdvice
           </NavLink>
           <NavLink
             to='/cartpage'
-            className='hover:text-orange-500 text-gray-500'
+            className='hover:text-orange-500 text-black'
           >
-            CartPage
+            <span className='absolute pl-[45px]'>{totalCartItem}</span>
+            <FaShoppingCart
+            className='w-[50px] h-[35px]' />
           </NavLink>
         </div>
         <div className='flex  ml-[180px] space-x-[20px]'>

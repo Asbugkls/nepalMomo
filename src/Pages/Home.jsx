@@ -10,12 +10,13 @@ function Home() {
     <div>
    <div className='h-[650px]'>
     <div className='ml-[110px] mt-[100px] space-y-2'>
-      <h1 className='text-gray-500 space-x-2 tracking-[2px]'>RESTURANT</h1>
+      <h1 className='text-gray-500 space-x-2 tracking-[2px'>RESTURANT</h1>
       <p className='font-bold text-[50px]'>The<span className='bg-[url(assets/Home/home2.png)] bg-center bg-cover text-white'>#One</span></p>
       <p className='font-bold text-[50px]'> MOMO <span className='text-orange-600'>Resturant</span></p>
       <h1 className='font-bold text-[20px]'>More then <span className='text-orange-600'>  20+ Varieties</span> of Momo Available for You</h1>
       <button className='flex justify-center items-center border h-[55px] w-[220px] rounded-[50px] bg-teal-900'>Explore Food Menu <HiMiniArrowLongRight/></button>
     </div>
+
     <div className='flex'>
       <div>
         <img src={home1} alt='' className='h-[700px] absolute right-0 top-0 -z-50 '/>
