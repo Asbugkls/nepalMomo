@@ -36,7 +36,7 @@ function Home () {
           <p className='font-bold text-[50px]'>
             The
             <span className='bg-[url(assets/Home/home2.png)] bg-center bg-cover text-white'>
-              #One
+              #Only
             </span>
           </p>
           <p className='font-bold text-[50px]'>
