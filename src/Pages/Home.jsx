@@ -93,7 +93,19 @@ function Home () {
           </button>
         </div>
       </div>
-      <div className='border-2 border-black rounded-2xl m-5 p-5'>
+      
+      <div className="ml-[110px] mt-[50px] h-[400px]">
+        <div className="flex flex-col justify-center items-center">
+          <h1 className="text-[39px] font-bold">
+            Our <span className="text-orange-500"> Most Popular</span> Recipes
+          </h1>
+          <p className="text-[20px]">
+            Browse through a varieties of recipes with fresh ingredients
+            selected only from the best places
+          </p>
+        </div>
+
+      <div className='border-4 border-black rounded-2xl m-5 p-5'>
         <div className='flex justify-center gap-[55px]'>
           <button
             onClick={() => {
@@ -153,6 +165,7 @@ function Home () {
             )}
           </div>
       </div>
+    </div>
     </div>
   )
 }

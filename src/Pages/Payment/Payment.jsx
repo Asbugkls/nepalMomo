@@ -89,7 +89,7 @@ function Payment () {
           type="hidden"
           id="success_url"
           name="success_url"
-          value="http://localhost:5173/success"
+          value="https://nepal-momo-iota.vercel.app/success"
           required
         />
 
@@ -97,7 +97,7 @@ function Payment () {
           type="hidden"
           id="failure_url"
           name="failure_url"
-          value="http://localhost:5173/failure"
+          value="https://nepal-momo-iota.vercel.app/failure"
           required
         />
 
@@ -122,7 +122,7 @@ function Payment () {
           <h1>Total Amount Rs:{totalAmount}</h1>
         </div>
 
-        <input value="Submit" type="submit" className='color-white bg-amber-800 rounded-2xl' />
+        <input value="Submit" type="submit" className='color-white bg-amber-800 rounded-2xl p-2 m-' />
       </form>
     </div>
   );
