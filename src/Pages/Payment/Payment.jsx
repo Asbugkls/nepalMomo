@@ -122,7 +122,7 @@ function Payment () {
           <h1>Total Amount Rs:{totalAmount}</h1>
         </div>
 
-        <input value="Submit" type="submit" className='color-white bg-amber-800 rounded-2xl p-2 m-' />
+        <input value="Submit" type="submit" className='color-white bg-amber-800 rounded-2xl p-2 ' />
       </form>
     </div>
   );
