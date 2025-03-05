@@ -15,6 +15,8 @@ function Payment () {
 
   var hash = CryptoJS.HmacSHA256(Message, '8gBm/:&EnhH.1/q')
   var hashInBase64 = CryptoJS.enc.Base64.stringify(hash)
+
+  console.log(hashInBase64)
   //document.write(hashInBase64);
 
   // console.log(data.state.totalAmount);
