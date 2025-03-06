@@ -4,7 +4,7 @@ import services2 from "../assets/Services/services2.png";
 import services3 from "../assets/Services/services3.png";
 import services4 from "../assets/Services/services4.png";
 import services5 from "../assets/Services/services5.png";
-import momo from "../assets/Image/momo.png";
+import momo from "../assets/Image/momo.png"
 import QR from "../assets/Services/QR.png";
 import { FaPlayCircle } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";

@@ -1,5 +1,5 @@
 import React from 'react'
-import failure from '../assets/Image/failure.png'
+import failure from "../../assets/Image/failure.png"
 
 
 function Failure() {

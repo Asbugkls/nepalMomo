@@ -1,5 +1,5 @@
 import React from "react";
-import paymentSuccess from "../../assets/Image/payment-success.png";
+import success from "../../assets/Image/success.png"
 import { useSearchParams } from "react-router-dom";
 
 function Success() {
@@ -12,7 +12,7 @@ function Success() {
   return (
     <div>
       <div className="  shadow-2xl   shadow-black   rounded-2xl  p-2 w-96 m-auto  flex flex-col  justify-center  items-center  mt-[50px]   ">
-        <img src={paymentSuccess} alt="" />
+        <img src={success} alt="" />
         <h1 className="font-bold">Payment Success</h1>
         <div className="mt-[20px] space-y-2">
           <h1>Total Amount: {newInfo.total_amount}</h1>
@@ -24,4 +24,4 @@ function Success() {
   );
 }
 
-export default Success;
+export default Success;
