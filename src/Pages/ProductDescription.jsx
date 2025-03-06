@@ -15,7 +15,7 @@ function ProductDescription() {
 
   const getSingleData = async () => {
     try {
-      let response = await fetch(`https:dummyjson.com/recipes/${id}`);
+      let response = await fetch(`https://dummyjson.com/recipes/${id}`);
       response = await response.json();
       // console.log(response);
       setProduct(response);
